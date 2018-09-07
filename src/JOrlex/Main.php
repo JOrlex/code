@@ -3,7 +3,7 @@
 namespace JOrlex;
 
 use pocketmine\Player;
-use pocketmine\PluginBase;
+use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\Server;
 use pocketmine\event\Listener;
