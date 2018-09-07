@@ -11,26 +11,26 @@ use pocketmine\utils\TextFormat;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
-class main extends PluginBase implements Listener{
+class main extends PluginBase implements Listener {
 
-  public function onLoad(){
+  public function onLoad()  {
             $this->getLogger()->info("Plugin Loading");
-         }
+        }
 
-         public function onEnable(){
+         public function onEnable() {
                    $this->getServer()->getPluginManager()->registerEvents($this,$this);
                    $this->getLogger()->info("Enabled Plugin");
-               }
+              }
 
-         public function onDisable(){
+         public function onDisable()  {
                    $this->getLogger()->info("Plugin Disabled");
-               }
+              }
 
          public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool{
-             if($cmd->getName() == "feed"){
+             if($cmd->getName() == "feed")  {
              $sender->setFood(20);
-             }
+            }
              return true;
-             }
+            }
 
  ?>
