@@ -1,0 +1,15 @@
+name: Citem
+author: JOrlex
+api: [3.0.0]
+version: 1.0
+main: JOrlex/Main
+commands:
+  feed:
+   description: feed command, restores Hunger
+   usage: " Usage: /feed"
+   permission: feed.command
+
+permissions:
+  feed.command:
+    description: Restores max hunger of a player
+    default: true
