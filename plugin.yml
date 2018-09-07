@@ -2,7 +2,7 @@ name: Citem
 author: JOrlex
 api: [3.0.0]
 version: 1.0
-main: JOrlex/Main
+main: JOrlex\Main
 commands:
   feed:
    description: feed command, restores Hunger
