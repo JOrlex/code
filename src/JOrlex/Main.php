@@ -32,5 +32,6 @@ class main extends PluginBase implements Listener {
             }
              return true;
             }
+}
 
  ?>
