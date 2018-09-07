@@ -27,11 +27,15 @@ class Main extends PluginBase implements Listener {
               }
 
          public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool{
-             if($cmd->getName() == "feed")  {
+           if(!$sender instanceof Player) {
+           $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
+          }else{
+           if($cmd->getName() == "feed")  {
              $sender->setFood(20);
             }
              return true;
             }
+         }
 }
 
  
