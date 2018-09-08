@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener {
     switch($cmd->getName()){
         case "feed":
         if($sender->hasPermission("feed.cmd")) {
-            $player->setFood(20);;
+            $player->setFood(20);
             $player->sendMessage("§8§l[§a!§8]§r§a You have been §lFed§r§a!");
             return true;
         } else {
