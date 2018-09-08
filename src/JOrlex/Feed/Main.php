@@ -1,6 +1,6 @@
 <?php
 
-namespace JOrlex;
+namespace JOrlex\Feed;
 
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
