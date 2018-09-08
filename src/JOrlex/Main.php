@@ -27,15 +27,23 @@ class Main extends PluginBase implements Listener {
               }
 
          public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool{
-           if(!$sender instanceof Player) {
-           $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
-          }else{
-           if($cmd->getName() == "feed")  {
-             $sender->setFood(20);
-            }
-             return true;
-            }
-         }
+
+        $player = $sender->getPlayer();
+
+    switch($cmd->getName()){
+        case "feed":
+        if($sender->hasPermission("feed.cmd")) {
+            $player->setFood(20);;
+            $player->sendMessage("§8§l[§a!§8]§r§a You have been §lFed§r§a!");
+            return true;
+        } else {
+            $player->sendMessage("§8§l[§c!§8]§r§c You do not have permission to execute this command!");
+            return true;
+        }
+    }
+
+ }
+
 }
 
  
