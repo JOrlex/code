@@ -7,9 +7,9 @@ commands:
   feed:
    description: feed command, restores Hunger
    usage: " Usage: /feed"
-   permission: feed.command
+   permission: feed.cmd
 
 permissions:
-  feed.command:
+  feed.cmd:
     description: Restores max hunger of a player
     default: true
