@@ -2,7 +2,7 @@ name: feed
 author: JOrlex
 api: [3.0.0]
 version: 1.0
-main: JOrlex\Main
+main: JOrlex\Feed\Main
 commands:
   feed:
    description: feed command, restores Hunger
